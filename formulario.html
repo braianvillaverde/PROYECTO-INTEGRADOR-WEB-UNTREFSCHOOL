@@ -16,22 +16,21 @@
         <h1>Formulario de Contacto</h1>
     </header>
     <main>
-        <form action="https://formsubmit.co/braianvillaverde@gmail.com">
+        <form action="https://formsubmit.co/braianvillaverde@gmail.com" method="post">
             <label for="nombre">Nombre y Apellido:</label>
-            <input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre y appelido">
+            <input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre y appelido" required>
             <label for="telefono">Tel:</label>
-            <input type="tel" name="telefono" id="telefono" placeholder="Ingrese su numero de telefono">
+            <input type="tel" name="telefono" id="telefono" placeholder="Ingrese su numero de telefono" required>
             <label for="email">Email:</label>
-            <input type="email" name="email" id="email" placeholder="Ingrese el email">
-            <label for=""></label>
+            <input type="email" name="email" id="email" placeholder="Ingrese el email" pattern="@" required>
             <fieldset>
                 <legend>En que carrera estas interesado/a?</legend>
                 <label for="programacion">Programacion</label>
-                <input type="radio" id="programacion" name="carreras" checked>
+                <input type="radio" id="programacion" name="carreras" value="Programacion" checked>
                 <label for="disenio-grafico">Diseño Grafico</label>
-                <input type="radio" id="disenio-grafico" name="carreras">
+                <input type="radio" id="disenio-grafico" name="carreras" value="Diseño Grafico">
                 <label for="ing-sonido">Ing.Sonido</label>
-                <input type="radio" id="ing-sonido" name="carreras">
+                <input type="radio" id="ing-sonido" name="carreras" value="Ing de Sonido">
             </fieldset>
             <button type="submit">Enviar</button>
 

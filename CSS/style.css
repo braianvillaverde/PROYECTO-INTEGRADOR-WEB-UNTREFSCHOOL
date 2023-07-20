@@ -115,7 +115,16 @@ article{
 div{
   text-align: center;
 }
-
+iframe{
+  width: 10em;
+  height: 10em;
+  border: 3px solid black;
+}
+.icono{
+  display: inline flex;
+  height: 30px;
+  width: 30px;
+}
 
 @media screen and (min-width: 768px){
   nav {
