@@ -4,8 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario</title>
+    <meta name="formulario" content="formulario de contacto de untrefschool">
+    <meta author="Villaverde braian">
+    <link rel="stylesheet" href="CSS/formulario.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Belanosima:wght@700&family=Poppins:ital,wght@0,400;0,900;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Formulario de Contacto</h1>
+    <header>
+        <h1>Formulario de Contacto</h1>
+    </header>
+    <main>
+        <form action="https://formsubmit.co/braianvillaverde@gmail.com">
+            <label for="nombre">Nombre y Apellido:</label>
+            <input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre y appelido">
+            <label for="telefono">Tel:</label>
+            <input type="tel" name="telefono" id="telefono" placeholder="Ingrese su numero de telefono">
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="Ingrese el email">
+            <label for=""></label>
+            <fieldset>
+                <legend>En que carrera estas interesado/a?</legend>
+                <label for="programacion">Programacion</label>
+                <input type="radio" id="programacion" name="carreras" checked>
+                <label for="disenio-grafico">Diseño Grafico</label>
+                <input type="radio" id="disenio-grafico" name="carreras">
+                <label for="ing-sonido">Ing.Sonido</label>
+                <input type="radio" id="ing-sonido" name="carreras">
+            </fieldset>
+            <button type="submit">Enviar</button>
+
+        </form>
+    </main>
+
+
 </body>
 </html>
